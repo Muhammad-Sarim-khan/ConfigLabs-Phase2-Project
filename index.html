@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container"> 
+            <div class="to-do-App">  
+                <h1>TO DO LIST</h1>
+            </div>
+
+        <form>
+            <input id="input" placeholder="add your task" type="text">
+            <button onclick="addtask(event)" type="submit" id="add-button">+</button>
+        </form>
+        <div class="task-container">
+            <h2>Tasks To Do-<span id="task-count"></span></h2>
+            <ul class="list-items">
+            </ul>
+        </div>
+
+        <div class="done-container">
+            <h2>Done-<span id="done-count"></span></h2>
+            <ul class="list-items" id="done-tasks">
+            </ul>
+        </div>
+            
+        <div class="buttons" style="display: none;">
+            
+            <button class="complete-btn" >&#10004</button>
+            <button class="edit-btn">&#9998</button>
+            <button class="delete-btn">&#128465</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
